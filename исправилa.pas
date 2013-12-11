@@ -64,14 +64,14 @@ begin
   Code:=0;
   repeat
     Code:=Code+1;
-    x:=(a+b)/2 // точка с запятой
+    x:=(a+b)/2; // точка с запятой
     if f(a)*f(x)<0 then b:=x
     else a:=x;
     if (Code>100) then begin
     memo1.lines.add('Невозможно вычислить');
     exit;
-    end;
-  until abs(f(x))<ep;//епс вместо еп
+    end
+  until abs(f(x))<eps;//епс вместо еп
   val(edit1.text,a,code);
   val(edit2.text,b,code);
   i:=a;
