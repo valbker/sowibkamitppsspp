@@ -1,0 +1,117 @@
+object Form1: TForm1
+  Left = 318
+  Height = 240
+  Top = 181
+  Width = 391
+  Caption = 'Валькер А.  322а Лабораторная работа № 4'
+  ClientHeight = 240
+  ClientWidth = 391
+  LCLVersion = '1.0.8.0'
+  object Label1: TLabel
+    Left = 8
+    Height = 14
+    Top = 8
+    Width = 236
+    Caption = 'Вычисление корней для формулы: e^x-1/x-1=0'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 8
+    Height = 14
+    Top = 24
+    Width = 78
+    Caption = 'В интервале от'
+    ParentColor = False
+  end
+  object Label3: TLabel
+    Left = 144
+    Height = 14
+    Top = 24
+    Width = 13
+    Caption = 'до'
+    ParentColor = False
+  end
+  object Label4: TLabel
+    Left = 240
+    Height = 14
+    Top = 24
+    Width = 64
+    Caption = 'С точностью'
+    ParentColor = False
+  end
+  object Edit1: TEdit
+    Left = 104
+    Height = 21
+    Top = 24
+    Width = 29
+    OnChange = Edit1Change
+    TabOrder = 0
+    Text = '0.5'
+  end
+  object Edit2: TEdit
+    Left = 176
+    Height = 21
+    Top = 24
+    Width = 48
+    TabOrder = 1
+    Text = '1.0'
+  end
+  object Edit3: TEdit
+    Left = 336
+    Height = 21
+    Top = 24
+    Width = 48
+    TabOrder = 2
+    Text = '0.001'
+  end
+  object Memo1: TMemo
+    Left = 201
+    Height = 136
+    Top = 56
+    Width = 183
+    TabOrder = 3
+  end
+  object Button1: TButton
+    Left = 201
+    Height = 25
+    Top = 208
+    Width = 85
+    Caption = 'Вычислить'
+    OnClick = Button1Click
+    TabOrder = 4
+  end
+  object Button2: TButton
+    Left = 296
+    Height = 25
+    Top = 208
+    Width = 85
+    Caption = 'Выход'
+    OnClick = Button2Click
+    TabOrder = 5
+  end
+  object Chart1: TChart
+    Left = 8
+    Height = 164
+    Top = 48
+    Width = 182
+    AxisList = <    
+      item
+        Minors = <>
+        Title.LabelFont.Orientation = 900
+      end    
+      item
+        Alignment = calBottom
+        Minors = <>
+      end>
+    Foot.Brush.Color = clBtnFace
+    Foot.Font.Color = clBlue
+    Title.Brush.Color = clBtnFace
+    Title.Font.Color = clBlue
+    Title.Text.Strings = (
+      'TAChart'
+    )
+    ParentColor = False
+    object Chart1LineSeries1: TLineSeries
+    end
+  end
+end
